@@ -1,7 +1,17 @@
-<%- include ('../partials/header') %>
+<%- include ('../partials/header') %>
 
-<div class="container my-5">
-  <!-- Add in your own product display -->
+<div class="container my-5">
+  <header>
+    <h1><%= product.name %></h1>
+    <br>
+  </header>
+  <hr>
+  <div class="content">
+    <%= product.description %>
+  </div>
+  <div class="content">
+    <%= product.price %>
+  </div>
 </div>
 
-<%- include ('../partials/footer') %>
+<%- include ('../partials/footer') %>
